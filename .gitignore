@@ -1,0 +1,73 @@
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+# Ambientes Python e caches
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+# Artefatos e dados locais
+/data/
+/backups/
+**/backups/
+*.duckdb
+*.duckdb.*
+*.parquet
+*.arrow
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-wal
+*.db-shm
+*.dump
+*.backup
+*.bak
+*.sql.gz
+*.sql.zip
+*.log
+logs/
+*.tmp
+*.temp
+*.lock
+# Ferramentas e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+
+# Dumps SQL fora das migrações
+*_dump.sql
+*.dump.sql
+dump.sql
+
+
+# Estado local do orquestrador
+.prefect/
+
+# Evidências operacionais brutas: manter locais, publicar resumos Markdown revisados
+/orchestration/*RESULT*.json
+/orchestration/FIRST_AUTOMATIC_RUN.json
+
+# Credenciais locais e exportações fora dos diretórios de dados
+credentials.json
+secrets.json
+.aws/
+.docker/
+/exports/
+/export.sql

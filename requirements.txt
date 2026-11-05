@@ -1,0 +1,9 @@
+# Agregador das dependências reais; execute a partir da raiz.
+-r backend/requirements.txt
+-r frontend/requirements.txt
+-r scripts/synthetic_data/requirements.txt
+-r etl/requirements.txt
+-r warehouse/requirements.txt
+
+
+-r orchestration/requirements.txt
